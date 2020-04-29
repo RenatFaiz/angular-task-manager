@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+// add this ` after templateUrl:, to start inner <html>
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
