@@ -1,0 +1,39 @@
+<!-- Tasks dashboard. Template from
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+-->
+
+<div class="col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-header card-header-warning">
+      <h4 class="card-title">Список задач</h4>
+      <!--<p class="card-category">Дополнительная запись под заголовком</p>-->
+    </div>
+    <div class="card-body table-responsive">
+      <table class="table table-hover">
+        <thead class="text-warning">
+        <th>ID</th>
+        <th>Название</th>
+        <th>Статус</th>
+        <th>Приоритет</th>
+        <th>Категория</th>
+        <th>Дата</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let task of tasks">
+          <td>{{task.id}}</td>
+          <td>{{task.title}}</td>
+          <!--          <td>{{task.completed}}</td>-->
+          <!--          <td>{{task.priority}}</td>-->
+          <!--          <td>{{task.category}}</td>-->
+          <!--          <td>{{task.date}}</td>-->
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
