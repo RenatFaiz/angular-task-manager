@@ -1,3 +1,7 @@
 #check-sign {
   color: darkorange;
 }
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}

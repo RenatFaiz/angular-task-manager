@@ -32,4 +32,11 @@ export class DataHandlerService {
     const tasksFiltered = TestData.tasks.filter(task => task.category === category);
     this.tasksSubject.next(tasksFiltered);
   }
+
+  // Unnecessary at this moment
+  // isTaskCompleted(task: Task) {
+  //   if (task.completed === true) {
+  //     return true;
+  //   }
+  // }
 }
