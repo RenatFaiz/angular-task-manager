@@ -19,7 +19,6 @@ export class CategoriesComponent implements OnInit {
     // this.dataHandlerService.fillCategories();
     // console.log(this.categories);
     this.dataHandlerService.categoriesSubject.subscribe(categories => this.categories = categories);
-    this.dataHandlerService.fillCategories();
   }
 
   showTasksByCategory(category: Category) {
