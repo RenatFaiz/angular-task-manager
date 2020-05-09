@@ -36,7 +36,7 @@ export class TestData {
     {
       id: 2,
       title: 'Купить 1 кг огурцов',
-      completed: false,
+      completed: true,
       priority: TestData.priorities[0],
       category: TestData.categories[5],
       date: new Date('2020-05-02')

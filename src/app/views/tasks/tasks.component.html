@@ -7,6 +7,7 @@ Copyright 2020 Creative Tim (https://www.creative-tim.com)
 Coded by Creative Tim
 -->
 
+<!-- Tasks's card-->
 <div class="card">
   <div class="card-header card-header-warning">
     <h4 class="card-title">Список задач</h4>
@@ -29,11 +30,18 @@ Coded by Creative Tim
         <td>{{task.category != null ? task.category.title : "без категории"}}</td>
         <td>{{task.priority != null ? task.priority.title : "без приоритета"}}</td>
         <td>{{task.date != null ? (task.date | date : 'short') : "без даты"}}</td>
-        <td>{{task.completed}}</td>
-        <!--          <td>{{task.completed}}</td>-->
-        <!--          <td>{{task.priority}}</td>-->
-        <!--          <td>{{task.category}}</td>-->
-        <!--          <td>{{task.date}}</td>-->
+        <!-- Task's checkbox -->
+        <td>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"
+                     value="" [checked]="task.completed">
+              <span class="form-check-sign">
+                <span class="check"></span>
+              </span>
+            </label>
+          </div>
+        </td>
       </tr>
       </tbody>
     </table>

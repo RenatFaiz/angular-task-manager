@@ -7,7 +7,7 @@ Copyright 2020 Creative Tim (https://www.creative-tim.com)
 Coded by Creative Tim
 =========================================================
 -->
-<div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+<div class="sidebar" data-color="azure" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
   <!--
     Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
     Tip 2: you can also add an image using data-image tag
@@ -19,8 +19,10 @@ Coded by Creative Tim
   </div>
   <div class="sidebar-wrapper">
     <ul class="nav">
-      <li class="nav-item"
-          *ngFor="let category of categories" (click)="showTasksByCategory(category)">
+      <li class="nav-item pointer"
+          (click)="showTasksByCategory(category)"
+          *ngFor="let category of categories"
+          [class.active]="category === selectedCategory">
         <a class="nav-link">
           <i class="material-icons">bookmark</i>
           <p>{{category.title}}</p>
