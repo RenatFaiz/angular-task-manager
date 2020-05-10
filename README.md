@@ -1,6 +1,8 @@
 # My task manager 📝
-Планировщик задач на TypeScript с ипользованием фреймворка Angular
-<img src="src/assets/my-task-manager.png" width="400">
+Планировщик задач на TypeScript с использованием фреймворка Angular\
+\
+<img src="src/assets/my-task-manager.png" width="500" style="border: 1px solid lightgray;" 
+alt="Task manager screen capture">
 
 ### Возможности
 - Отображение всех задач при загрузке приложения.
