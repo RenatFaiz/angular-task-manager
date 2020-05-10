@@ -1,7 +1,7 @@
-# My task manager 📝
+## My task manager 📝
 Планировщик задач на TypeScript с использованием фреймворка Angular\
 \
-<img src="src/assets/my-task-manager.png" width="500" style="border: 1px solid lightgray;" 
+<img src="src/assets/my-task-manager.png" width="550" style="border: 1px solid lightgray;" 
 alt="Task manager screen capture">
 
 ### Возможности
