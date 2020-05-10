@@ -9,6 +9,7 @@
 
 # local backup
 /backup
+/src/assets/img
 
 # dependencies
 /node_modules
@@ -47,3 +48,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Tests
+/e2e

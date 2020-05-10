@@ -21,15 +21,18 @@ Coded by Creative Tim
       <th>Категория</th>
       <th>Приоритет</th>
       <th>Дата</th>
-      <th>Статус</th>
+      <th>Выполнено</th>
       </thead>
       <tbody>
       <tr *ngFor="let task of tasks; let i = index">
         <td>{{i + 1}}</td>
         <td [class.completed]="task.completed">{{task.title}}</td>
-        <td>{{task.category != null ? task.category.title : "без категории"}}</td>
-        <td>{{task.priority != null ? task.priority.title : "без приоритета"}}</td>
-        <td>{{task.date != null ? (task.date | date : 'short') : "без даты"}}</td>
+        <td [class.novalue]="task.category == null">
+          {{task.category != null ? task.category.title : "без категории"}}</td>
+        <td [class.novalue]="task.priority == null">
+          {{task.priority != null ? task.priority.title : "без приоритета"}}</td>
+        <td [class.novalue]="task.date == null">
+          {{task.date != null ? (task.date | date : 'short') : "без даты"}}</td>
         <!-- Task's checkbox -->
         <td>
           <div class="form-check">
